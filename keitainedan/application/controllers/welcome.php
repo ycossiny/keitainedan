@@ -21,14 +21,43 @@ class Welcome extends CI_Controller {
 	{
 		$data['page_title'] = 'keitai';
         $this->load->view('header',$data);
-        $this->load->view('body');
-        $this->load->view('footer',$data);
-        
+        $this->load->view('shurui');
+        $this->load->view('footer');
 	}
-    public function comments()
+
+    public function sumaho()
 	{
-		echo 'Look at this!';
-	}
+        $data['page_title'] = 'keitai';
+        $this->load->view('header',$data);
+        $this->load->view('kaisen');
+        $this->load->view('footer');
+        
+    }
+    public function ddenwa()
+	{
+        $data['page_title'] = 'keitai';
+        $this->load->view('header',$data);
+        $this->load->view('body');
+        $this->load->view('footer');
+        
+    }
+    public function kodawaranai()
+	{
+        $data['page_title'] = 'keitai';
+        $this->load->view('header',$data);
+        $this->load->view('',$data);
+        $this->load->view('footer');
+        
+    }
+    public function lte()
+	{
+        $data['page_title'] = 'keitai';
+        $this->load->view('header',$data);
+        $this->load->view('pakeho');
+        $this->load->view('footer');
+    }
+    
+
 }
 
 /* End of file welcome.php */
