@@ -19,7 +19,15 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$data['page_title'] = 'keitai';
+		$data['page_title'] = 'モバイル料金ラボ';
+        $this->load->view('header',$data);
+        $this->load->view('top');
+        $this->load->view('footer');
+	}
+
+public function docomo()
+	{
+		$data['page_title'] = 'モバイル料金ラボ';
         $this->load->view('header',$data);
         $this->load->view('shurui');
         $this->load->view('footer');
@@ -35,7 +43,7 @@ class Welcome extends CI_Controller {
     }
     public function ddenwa()
 	{
-        $data['page_title'] = 'keitai';
+        $data['page_title'] = 'モバイル料金ラボ';
         $this->load->view('header',$data);
         $this->load->view('body');
         $this->load->view('footer');
@@ -43,7 +51,7 @@ class Welcome extends CI_Controller {
     }
     public function kodawaranai()
 	{
-        $data['page_title'] = 'keitai';
+        $data['page_title'] = 'モバイル料金ラボ';
         $this->load->view('header',$data);
         $this->load->view('',$data);
         $this->load->view('footer');
@@ -51,7 +59,7 @@ class Welcome extends CI_Controller {
     }
     public function lte()
 	{
-        $data['page_title'] = 'keitai';
+        $data['page_title'] = 'モバイル料金ラボ';
         $this->load->view('header',$data);
         $this->load->view('pakeho');
         $this->load->view('footer');
