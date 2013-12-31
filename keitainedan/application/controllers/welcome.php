@@ -67,8 +67,12 @@ public function docomo()
      public function result()
 	{
         $data['page_title'] = 'モバイル料金ラボ';
+		
+		$smartA = $this -> input -> post('smartA');
+		$data['smartA']=$smartA;
+		
         $this->load->view('header',$data);
-        $this->load->view('result');
+        $this->load->view('result',$data);
         $this->load->view('footer');
     }
 
