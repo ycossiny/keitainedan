@@ -35,7 +35,7 @@ public function docomo()
 
     public function sumaho()
 	{
-        $data['page_title'] = 'keitai';
+        $data['page_title'] = 'モバイル料金ラボ';
         $this->load->view('header',$data);
         $this->load->view('kaisen');
         $this->load->view('footer');
@@ -53,7 +53,7 @@ public function docomo()
 	{
         $data['page_title'] = 'モバイル料金ラボ';
         $this->load->view('header',$data);
-        $this->load->view('',$data);
+        $this->load->view('');
         $this->load->view('footer');
         
     }
@@ -64,7 +64,13 @@ public function docomo()
         $this->load->view('pakeho');
         $this->load->view('footer');
     }
-    
+     public function result()
+	{
+        $data['page_title'] = 'モバイル料金ラボ';
+        $this->load->view('header',$data);
+        $this->load->view('result');
+        $this->load->view('footer');
+    }
 
 }
 
