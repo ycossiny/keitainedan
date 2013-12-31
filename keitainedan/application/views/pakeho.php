@@ -1,3 +1,3 @@
 よくネットを使う？
-<a href="index.php/welcome/ddenwa">イェス</a>
-<a href="index.php/welcome/ddenwa">ノー</a>
+<a href="">イェス</a>
+<a href="">ノー</a>
